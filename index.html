@@ -1,78 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Download B&L App</title>
+  <title>Download App</title>
 
   <style>
-  body {
-    margin: 0;
-    font-family: system-ui, -apple-system, sans-serif;
-    background: #fff;
-  }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
 
-  .container {
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 16px;
-    text-align: center;
-  }
+    .wrapper {
+      max-width: 420px;
+      width: 100%;
+      padding: 16px;
+      text-align: center;
+    }
 
-  .hero {
-    width: 100%;
-    height: auto;
-    margin-bottom: 24px;
-  }
+    .hero {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 24px;
+    }
 
-  .btn {
-    display: block;
-    padding: 16px;
-    margin-bottom: 12px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 14px;
-  }
+    .button {
+      display: block;
+      padding: 16px;
+      margin-bottom: 12px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
 
-  .ios {
-    background: #000;
-    color: #fff;
-  }
+    .ios {
+      background-color: #000000;
+      color: #ffffff;
+    }
 
-  .android {
-    background: #3ddc84;
-    color: #000;
-  }
-</style>
+    .android {
+      background-color: #3ddc84;
+      color: #000000;
+    }
+
+    .hint {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
 </head>
 
 <body>
-  <body>
-  <div class="container">
+  <div class="wrapper">
+    <!-- Replace with your exported PDF image -->
     <img
       src="download-app.png"
-      alt="Download B&L app"
+      alt="Download BnL app"
       class="hero"
     />
 
-    https://apps.apple.com/app/idXXXXXXXXiOS Download</a>
-    https://play.google.com/store/apps/details?id=XXXXXXXXAndroid Download</a>
+    <!-- Fallback buttons (always visible, always work) -->
+    <a>https://apps.apple.com/app/id6450524262 Download on the App Store</a>
+    <a>https://play.google.com/store/apps/details?id==au.com.bestandless Get it on Google Play</a>
+
+    <div class="hint">
+      If you are not redirected automatically, choose your platform above.
+    </div>
   </div>
 
+</body>
+
   <script>
-    const iosLink = "https://apps.apple.com/app/id6450524262";
-    const androidLink = "https://play.google.com/store/apps/details?id=au.com.bestandless";
-
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/android/i.test(ua)) {
-      window.location.href = androidLink;
-    } else if (/iPhone|iPad|iPod/.test(ua) && !window.MSStream) {
-      window.location.href = iosLink;
-    }
+    // ✅ REPLACE THESE WITH YOUR REAL LINKS
   </script>
-</body>
-</body>
-</html>
-``
